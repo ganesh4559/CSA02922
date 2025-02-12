@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() 
+{ int i ,j,colums=10;
+for( i=0;i<colums;i++)
+{
+    for( j=0;j<i;j++)
+    {
+    printf("* ");
+    }
+    printf("\n ",i);
+}
+    return 0;
+}
