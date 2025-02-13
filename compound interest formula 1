@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <math.h>
+int main() 
+{
+    float  p=12600,r=10,n=2,CI,a;
+      a = p *(pow((1+r/100),n));
+   
+     printf("A=%.1f \n",a);
+    CI=a-p;
+    printf(" CI =%.1f",CI);
+    return 0;
+}
