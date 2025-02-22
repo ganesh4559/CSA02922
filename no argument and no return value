@@ -1,0 +1,13 @@
+#include <stdio.h>
+void add();
+int main()
+{
+     add();
+     return 0;
+}
+void add()
+{
+    int a=20,b=30,sum;
+    sum=a+b;;
+    printf("addtion is =%d",sum);
+}
