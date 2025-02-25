@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include<string.h>
+#include<ctype.h>
+int main()
+{
+char line[200]="saveetha school of engineering 6758";
+int vowels,consonat,digits,space,i;
+vowels=consonat=digits=space=0;
+for(i=0;line[i]!='\0';i++)
+{
+    line [i]=tolower(line[i]);
+    if (line[i]=='a'||line[i]=='e'||line[i]=='i'||
+    line[i]=='o'||line[i]=='u')
+ {
+     vowels++;
+ }   
+ else if((line[i]>='a'&&line[i]<='z'))
+{
+    consonat++;
+}
+else if (line[i]>='0'&&line[i]<='9')
+{
+    digits++;
+}
+else if (line[i]==' ')
+{
+    space++;
+}
+}
+printf("vowels is =%d",vowels);
+printf("\nconsonats is =%d",consonat);
+printf("\n digits is =%d",digits);
+printf("\n white space is =%d",space);
+}
