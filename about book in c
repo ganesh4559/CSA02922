@@ -1,0 +1,32 @@
+**#include <stdio.h>
+#include <string.h>
+struct book
+{
+    char bookname[50];
+    char authorname[50];
+    int pageno;
+    float price;
+}
+b1,b2;
+int main ()
+{
+    strcpy(b1.bookname,"one_compiler");
+    strcpy(b1.authorname,"rangelamatasha");
+    b1.pageno=10;
+    b1.price=200;
+    printf("book name is =%s\n",b1.bookname);
+    printf("athor name is =%s\n",b1.authorname);
+    printf("page no =%d\n",b1.pageno);
+    printf("price is =%.3f\n",b1.price);
+    strcpy(b2.bookname,"java");
+    strcpy(b2.authorname,"rangelamatasha");
+    b2.pageno=200;
+    b2.price=1000;
+    printf("book name is =%s\n",b2.bookname);
+    printf("author name is =%s\n",b2.authorname);
+    printf("page no is =%d\n",b2.pageno);
+    printf("price is=%.3f",b2.price);
+
+return 0;
+}
+**
