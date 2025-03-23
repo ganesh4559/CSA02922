@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main ()
+{
+    int num1=12,num2=12,sum;
+    int *ptr1,*ptr2;
+    ptr1=&num1;
+    ptr2= &num2;
+    
+    sum=*ptr1+*ptr2;
+    printf("sum of two numbers =%d\n",sum);
+    return 0;
+}
